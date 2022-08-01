@@ -5,21 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qr Code </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
 </head>
-<body>
-    
-<div class="container">
-    <h1>Qr Code Generatar</h1>
-    <p>Past a url or enter text to create Qr Code</p>
-    <input type="text" id="text" placeholder="Enter text or url">
-    <br>
-    <button id="btn">Generatar Qr Code</button>
-    <div class="qr">
-        <img src="" alt="please waite">
-    </div>
-</div>
 
+<body>
+    <section>
+        <div class="container">
+            <h1>Qr Code Generatar</h1>
+            <p>Past a url or enter text to create Qr Code</p>
+            <input type="text" id="text" placeholder="Enter text or url">
+            <br>
+            <button id="btn">Generatar Qr Code</button>
+            <div class="qr">
+                <img src="" alt="please waite">
+                <a href="" download="" id="Donwlaod">Donwlaod Img</a>
+            </div>
+        </div>
+        <div class="or">
+            OR
+        </div>
+        <div class="upload">
+            <div class="cloud">
+                <div class="imgg">
+                    <img src="" alt="">
+                </div>
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <p>Upload QR Code to Scan</p>
+            </div>
+            <div class="text">
+                <textarea readonly></textarea>
+                <div>
+                    <button id="close">Close</button>
+                    <button id="copy">Copy text</button>
+                </div>
+            </div>
+        </div>
+        <form action="#">
+            <input type="file" accept="image/*" id="file">
+        </form>
+    </section>
 </body>
 </html>
