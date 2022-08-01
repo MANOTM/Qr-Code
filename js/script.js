@@ -42,7 +42,6 @@ function getImg(value) {
 }
 
 Donwlaod.onclick = (eo) => {
-  eo.preventDefault();
   Donwlaod.href = qrImg.src;
 };
 
